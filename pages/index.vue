@@ -45,22 +45,16 @@
               >Order your own favourite coffee accoding to your own preference!</template>
             </Service>
 
-            <Service imgURL="/img/icon2.png" title="Service Title">
-              <template
-                v-slot:content
-              >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus excepturi quisquam temporibus non nisi doloribus cumque cum molestiae odio velit ratione perspiciatis assumenda numquam quam porro, sed quasi quia possimus?</template>
+            <Service imgURL="/img/icon2.png" title="Latte?">
+              <template v-slot:content>Do you want a cup of latte?</template>
             </Service>
 
-            <Service imgURL="/img/icon3.png" title="Service Title">
-              <template
-                v-slot:content
-              >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus excepturi quisquam temporibus non nisi doloribus cumque cum molestiae odio velit ratione perspiciatis assumenda numquam quam porro, sed quasi quia possimus?</template>
+            <Service imgURL="/img/icon3.png" title="Mocha?">
+              <template v-slot:content>Do you want a cup of Mocha?</template>
             </Service>
 
-            <Service imgURL="/img/icon4.png" title="Service Title">
-              <template
-                v-slot:content
-              >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus excepturi quisquam temporibus non nisi doloribus cumque cum molestiae odio velit ratione perspiciatis assumenda numquam quam porro, sed quasi quia possimus?</template>
+            <Service imgURL="/img/icon4.png" title="Cappucino?">
+              <template v-slot:content>Do you want a cup of Cappucino?</template>
             </Service>
           </template>
         </ServiceContent>
