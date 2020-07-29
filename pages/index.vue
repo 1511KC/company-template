@@ -11,24 +11,22 @@
           :second_header ( Header 2 Text)
           :descriptions ( Descriptions )
         -->
-        <HeaderContent 
-          imgURL="/img/slider1.jpeg"
-          header_txt="Company Template by LEAD"
-          second_header="Second Header"
-          descriptions="Header Descriptions"
+        <HeaderContent
+          imgURL="https://res.cloudinary.com/grohealth/image/upload/f_auto,fl_lossy,q_auto/v1581688713/DCUK/Content/iStock-938993594-1000x600.jpg"
+          header_txt="Coffee Mou"
+          second_header="Aroma feeling"
+          descriptions="FullStack Web Development Hands on"
         ></HeaderContent>
         <!-- 
           About Content 
 
           PARAMETERS
           :imgURL ( URL for about us )
-         -->
+        -->
         <AboutContent
-          imgURL="/img/about.jpg"
+          imgURL="https://www.terbodorecoffee.co.za/wp-content/uploads/2018/08/about-us-1.jpg"
         >
-          <template v-slot:about>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dolorum rerum hic exercitationem odit, soluta eaque eos corporis quam alias ipsum repudiandae blanditiis tempore eligendi numquam temporibus! Molestias, quos beatae?
-          </template>
+          <template v-slot:about>Coffee Mou is a coffee shop that serves good coffee to everyone.</template>
         </AboutContent>
 
         <ServiceContent>
@@ -40,48 +38,36 @@
               PARAMETERS
 
               :imgURL (image url)
-             -->
-            <Service
-              imgURL="/img/icon1.png"
-              title="Service Title"
-            >
-              <template v-slot:content>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus excepturi quisquam temporibus non nisi doloribus cumque cum molestiae odio velit ratione perspiciatis assumenda numquam quam porro, sed quasi quia possimus?
-              </template>
+            -->
+            <Service imgURL="/img/icon1.png" title="Own Combination of Coffee">
+              <template
+                v-slot:content
+              >Order your own favourite coffee accoding to your own preference!</template>
             </Service>
 
-            <Service
-              imgURL="/img/icon2.png"
-              title="Service Title"
-            >
-              <template v-slot:content>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus excepturi quisquam temporibus non nisi doloribus cumque cum molestiae odio velit ratione perspiciatis assumenda numquam quam porro, sed quasi quia possimus?
-              </template>
+            <Service imgURL="/img/icon2.png" title="Service Title">
+              <template
+                v-slot:content
+              >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus excepturi quisquam temporibus non nisi doloribus cumque cum molestiae odio velit ratione perspiciatis assumenda numquam quam porro, sed quasi quia possimus?</template>
             </Service>
 
-            <Service
-              imgURL="/img/icon3.png"
-              title="Service Title"
-            >
-              <template v-slot:content>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus excepturi quisquam temporibus non nisi doloribus cumque cum molestiae odio velit ratione perspiciatis assumenda numquam quam porro, sed quasi quia possimus?
-              </template>
+            <Service imgURL="/img/icon3.png" title="Service Title">
+              <template
+                v-slot:content
+              >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus excepturi quisquam temporibus non nisi doloribus cumque cum molestiae odio velit ratione perspiciatis assumenda numquam quam porro, sed quasi quia possimus?</template>
             </Service>
 
-            <Service
-              imgURL="/img/icon4.png"
-              title="Service Title"
-            >
-              <template v-slot:content>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus excepturi quisquam temporibus non nisi doloribus cumque cum molestiae odio velit ratione perspiciatis assumenda numquam quam porro, sed quasi quia possimus?
-              </template>
+            <Service imgURL="/img/icon4.png" title="Service Title">
+              <template
+                v-slot:content
+              >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus excepturi quisquam temporibus non nisi doloribus cumque cum molestiae odio velit ratione perspiciatis assumenda numquam quam porro, sed quasi quia possimus?</template>
             </Service>
           </template>
         </ServiceContent>
 
         <!-- 
           Portfolio
-         -->
+        -->
         <PortfolioContent>
           <template v-slot:portfolio>
             <!-- 
@@ -92,21 +78,27 @@
               :name ( Name of the Project )
               :project ( Name of Project Type)
               :projectURL ( Link Address to project)
-             -->
+            -->
             <Project
-                imgURL='/img/about.jpg'
-                name='Project Name'
-                project='Project Type'
-                projectURL='https://google.com'
-              />
+              imgURL="https://og.github.com/octocat/github-octocat@1200x630.png"
+              name="GitHub Account"
+              project="NuxtJS"
+              projectURL="https://github.com/1511KC/company-template"
+            />
 
+            <Project
+              imgURL="https://pbs.twimg.com/profile_images/1171375829382774784/70ZgE-ke_400x400.png"
+              name="GitHub Account"
+              project="NuxtJS"
+              projectURL="https://codesandbox.io/s/mutable-forest-efrw8?file=/pages/index.vue"
+            />
           </template>
         </PortfolioContent>
         <ContactContent
-          address="Level 11, Menara KEN TTDI, No.37 Jalan Burhanuddin Helmi, Taman Tun Dr. Ismail"
-          email="support@thelead.io"
-          phone="6016-473 7281"
-          imgURL="/img/lead-white-logo.png"
+          address="245, Batu 11, Desa Aman"
+          email="eugune_1511@hotmail.com"
+          phone="6016-985 1595"
+          imgURL="https://dynaimage.cdn.cnn.com/cnn/c_fill,g_auto,w_1200,h_675,ar_16:9/https%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F150929101049-black-coffee-stock.jpg"
         />
       </div>
     </div>
@@ -114,5 +106,10 @@
 </template>
 <script>
 export default {
-}
+  head() {
+    return {
+      title: "Coffee Mou"
+    };
+  }
+};
 </script>
