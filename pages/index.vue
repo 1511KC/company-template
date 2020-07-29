@@ -81,10 +81,10 @@
             />
 
             <Project
-              imgURL="https://pbs.twimg.com/profile_images/1171375829382774784/70ZgE-ke_400x400.png"
-              name="GitHub Account"
-              project="NuxtJS"
-              projectURL="https://codesandbox.io/s/mutable-forest-efrw8?file=/pages/index.vue"
+              imgURL="https://imageog.flaticon.com/icons/png/512/174/174857.png?size=1200x630f&pad=10,10,10,10&ext=png&bg=FFFFFFFF"
+              name="Linkedin Account"
+              project="Linkedin"
+              projectURL="https://www.linkedin.com/in/tan-kar-cheng-81744b16b/"
             />
           </template>
         </PortfolioContent>
